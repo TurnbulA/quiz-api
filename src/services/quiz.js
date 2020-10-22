@@ -33,12 +33,15 @@ async function saveQuizAsync(quiz) {
       throw new ValidationError("Blank answer");
     }
   });
+<<<<<<< HEAD
   const list = quizzes.map((quiz) => {
     return {
       id: quiz.id,
       name: quiz.name.toUpperCase(),
     };
   });
+=======
+>>>>>>> 62c59dd8d29e8c1ab628fbe533f70bce0680aa1a
 
   const id = await db.saveQuiz(quiz);
   return id;
